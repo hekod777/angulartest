@@ -1,0 +1,16 @@
+<h1>Here are the Players!</h1>
+<div class='container' ng-if = 'players.length === 0'>
+   no players here!
+</div>
+<div class = 'well'>
+	<div class = 'form-group'>
+		<input class ='form-control' placeholder="enter player name" ng-model = 'name'/>
+	</div>
+	<button class = 'btn btn-danger' ng-click='create()' ng-disabled = '!name'> Create Player </button>
+</div>
+
+<ul class='list-group'>
+	<li ng-repeat='player in players' class='list-group-item'>
+	{{player.name}}
+	</li>
+</ul>

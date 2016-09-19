@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.css" />
+		<script src="/angular/angular.js" defer></script>
+		<script src="/angular-ui-router/release/angular-ui-router.js" defer></script>
+		<script src="/app.js" defer></script>
+		<script src="/playerService.js" defer></script>
+		<script src="/PlayerCtrl.js" defer></script>
+		<title></title>
+	</head>
+	<body ng= 'teamPlayerApp'>
+		<h1>Welcome to Acme Company!</h1>
+			<div class = 'container'>
+				wtf uuu
+				<button class = 'pull-right'>goof</button>
+			</div>
+			<button ui-sref-active='active' ui-sref='player'>Players</button>
+			<a ui-sref = 'player'> show me the players</a>
+			<a ui-sref = 'test' class='btn btn-danger'> test</a>
+			<ui-view></ui-view>
+	</body>
+</html>
